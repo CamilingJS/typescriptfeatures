@@ -3,10 +3,15 @@
 //classes are first letters uppercase
 class Vehicle {
   drive(): void {
-    console.log('chugga chugga')
+    console.log('chugga chugga');
+  }
+
+  honk(): void {
+    console.log('beep');
   }
 }
 
 //instance of a class is same word frist letter lowercase -- using the key work 'new' 
 const vehicle = new Vehicle();
 vehicle.drive();
+vehicle.honk();
