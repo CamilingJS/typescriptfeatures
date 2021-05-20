@@ -36,6 +36,21 @@
 ### Classes --> Blueprint to create an object with some fields (values) and methods (functions) to represent a 'thing' 
 ### classes are first letters uppercase
 
+## Modifiers
+### Modifiers are key words we can place on different methods and properties inside a Class. 
+### The difference options are PUBLIC, PRIVATE, and PROTECTED
+### The of these modifiers is to restrict access to different functions or variables 
+### By default classes are public
+## PUBLIC
+### Means this method can be called any where, any time
+## PRIVATE
+### Means this method can only be called on by other methods in the exact same Class definition
+## PROTECTED 
+### Means this method can be called by other methods IN THIS CLASS, or by other methods in CHILD CLASSES as well 
+## We use Modifiers like 'private' so that we can restrict the methods other developers can call 
+
+
+
 
 
 
