@@ -1,5 +1,5 @@
 //Exploring inference around functions
-// Inference of the output of a function will work, however, we will always not rely on inference for the output type because there are cases where errors may not be found such as a outpus of void
+// Inference of the output of a function will work, however, we will always not rely on inference for the output type because there are cases where errors may not be found such as a outputs of void
 const add = (a:number,b:number): number => {
   return a + b; 
 };
