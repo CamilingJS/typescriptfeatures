@@ -11,7 +11,21 @@ class Vehicle {
   }
 }
 
+//We overridden drive method on the child class
+class Car extends Vehicle {
+  drive(): void {
+    console.log('vroom');
+  }
+}
+
+const car = new Car();
+car.drive();
+car.honk();
+
+
+
+
 //instance of a class is same word frist letter lowercase -- using the key work 'new' 
-const vehicle = new Vehicle();
-vehicle.drive();
-vehicle.honk();
+// const vehicle = new Vehicle();
+// vehicle.drive();
+// vehicle.honk();
