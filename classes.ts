@@ -2,27 +2,35 @@
 
 //classes are first letters uppercase
 class Vehicle {
+  color: string = 'red'; 
 
-  private honk(): void {
+  constructor(color: string) {
+    this.color = color; 
+  }
+
+  protected honk(): void {
     console.log('beep');
   }
 }
 
+const vehicle = new Vehicle('orange');
+console.log(vehicle.color);
+
 //We overridden drive method on the child class
 // We cannot change a modifier in child class 
 class Car extends Vehicle {
-  protected drive(): void {
+  private drive(): void {
     console.log('vroom');
   }
 
   startDrivingProcess(): void {
     this.drive();
-    this.honk();
+    
   }
 }
 const car = new Car();
 car.startDrivingProcess();
-car.honk();
+
 
 
 //instance of a class is same word frist letter lowercase -- using the key work 'new' 
