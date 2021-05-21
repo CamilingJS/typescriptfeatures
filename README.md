@@ -49,6 +49,13 @@
 ### Means this method can be called by other methods IN THIS CLASS, or by other methods in CHILD CLASSES as well 
 ## We use Modifiers like 'private' so that we can restrict the methods other developers can call 
 
+## Contructor 
+### Constructor function is a special function defined in a Class
+### Anytime we define a Constructor it will be instantly executed right when we create a new instance of the Class
+### If we use 'this' method to initialize in the Constructor, w don't have to initialize it outside the scope of the Constructor (an either or decision). Either you initialize a property on the same line or you can initialize the property inside the Constructor using 'this'. 
+
+
+
 
 
 
