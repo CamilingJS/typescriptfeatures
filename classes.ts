@@ -22,24 +22,27 @@ class Vehicle {
 const vehicle = new Vehicle('orange');
 console.log(vehicle.color);
 
-// //We overridden drive method on the child class
-// // We cannot change a modifier in child class 
-// class Car extends Vehicle {
-//   private drive(): void {
-//     console.log('vroom');
-//   }
+//We overridden drive method on the child class
+// We cannot change a modifier in child class 
+class Car extends Vehicle {
+  constructor(public wheels: number, color: string){
+    super(color);  
+  }
+  private drive(): void {
+    console.log('vroom');
+  }
 
-//   startDrivingProcess(): void {
-//     this.drive();
+  startDrivingProcess(): void {
+    this.drive();
     
-//   }
-// }
-// const car = new Car();
-// car.startDrivingProcess();
+  }
+}
+const car = new Car(4, 'red');
+car.startDrivingProcess();
 
 
 
-//instance of a class is same word frist letter lowercase -- using the key work 'new' 
+// instance of a class is same word frist letter lowercase -- using the key work 'new' 
 // const vehicle = new Vehicle();
 // vehicle.drive();
 // vehicle.honk();

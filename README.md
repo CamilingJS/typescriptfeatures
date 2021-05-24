@@ -51,8 +51,9 @@
 
 ## Contructor 
 ### Constructor function is a special function defined in a Class
-### Anytime we define a Constructor it will be instantly executed right when we create a new instance of the Class
-### If we use 'this' method to initialize in the Constructor, w don't have to initialize it outside the scope of the Constructor (an either or decision). Either you initialize a property on the same line or you can initialize the property inside the Constructor using 'this'. 
+### Anytime we define a Constructor, it will be instantly executed right when we create a new instance of the Class
+### If we use 'this' method to initialize in the Constructor, we don't have to initialize it outside the scope of the Constructor (an either or decision). Either you initialize a property on the same line or you can initialize the property inside the Constructor using 'this'. 
+### Whenever we call a Constructor method in a Child Class, we have to call super() -- which is a reference to the constructor method in the parent
 
 
 
